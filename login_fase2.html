@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación - Aroma a Café</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>Aroma a Café</header>
+
+    <main class="contenedor">
+        <h2>Validar credenciales</h2>
+
+        <form id="formLogin">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <p id="mensajeLogin" class="mensaje"></p>
+    </main>
+
+    <script src="login_fase2.js"></script>
+</body>
+</html>

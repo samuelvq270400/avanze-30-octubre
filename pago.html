@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Aroma a Café</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>Aroma a Café</header>
+
+<main class="contenedor">
+    <h2>Registrar pedido</h2>
+
+    <form id="formPedido">
+        <label>Producto:</label>
+        <select id="producto">
+            <option value="15000">Café de origen - $15.000</option>
+        </select>
+
+        <label>Tipo de molienda:</label>
+        <select id="molienda">
+            <option>En grano</option>
+            <option>Fina</option>
+            <option>Media</option>
+            <option>Gruesa</option>
+        </select>
+
+        <label>Cantidad:</label>
+        <input type="number" id="cantidad" min="1" value="1" required>
+
+        <label>Nombre para el envío:</label>
+        <input type="text" id="nombre" required>
+
+        <label>Dirección de entrega:</label>
+        <input type="text" id="direccion" required>
+
+        <label>Forma de pago:</label>
+        <select id="formaPago">
+            <option>Pago contra entrega</option>
+            <option>Transferencia (demostración)</option>
+        </select>
+
+        <button type="submit">Confirmar pedido</button>
+    </form>
+
+    <div id="resultadoPedido" class="mensaje"></div>
+</main>
+
+<script src="pago.js"></script>
+</body>
+</html>
